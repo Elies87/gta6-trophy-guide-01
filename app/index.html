@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI (PS5): all 55 trophies, roadmap & tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div>
+      <h1>Leonida Trophy Guide</h1>
+      <p class="sub">Grand Theft Auto VI on PlayStation 5 — all 55 trophies with a cited guide for each,
+      a roadmap to the platinum, and a tracker that saves in your browser. Works fully offline.</p>
+    </div>
+    <div class="overall">
+      <div id="overall-count" class="overall-count">0 / 55</div>
+      <div class="overall-label">trophies earned</div>
+      <div class="bar"><div id="overall-bar" class="bar-fill"></div></div>
+    </div>
+  </div>
+  <div id="grade-progress" class="grade-progress"></div>
+</header>
+
+<nav class="tabs" aria-label="Views">
+  <button id="tab-list" class="tab active" type="button">Trophy list & tracker</button>
+  <button id="tab-roadmap" class="tab" type="button">Roadmap to the platinum</button>
+</nav>
+
+<main>
+  <section id="view-list">
+    <div class="controls">
+      <label class="search">Search
+        <input id="search" type="search" placeholder="Trophy name or keyword…">
+      </label>
+      <label>Kind
+        <select id="kind">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="side">Side missions</option>
+          <option value="activities">Activities</option>
+          <option value="collectibles">Collectibles & exploration</option>
+          <option value="crime">Crime & combat</option>
+          <option value="misc">Milestones & misc</option>
+          <option value="missable">Missable only</option>
+        </select>
+      </label>
+      <label>Grade
+        <select id="grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label>Status
+        <select id="status">
+          <option value="all">All</option>
+          <option value="earned">Earned</option>
+          <option value="open">Not yet earned</option>
+        </select>
+      </label>
+      <label class="check">
+        <input id="spoiler" type="checkbox"> Spoiler shield: hide story trophies until earned
+      </label>
+    </div>
+    <div class="controls secondary">
+      <button id="export" type="button">Export progress</button>
+      <label class="import-btn">Import progress <input id="import" type="file" accept="application/json"></label>
+      <button id="reset" type="button">Reset tracker</button>
+      <span id="shown-count" class="shown-count"></span>
+    </div>
+    <div id="missable-alert" class="missable-alert"></div>
+    <div id="cards" class="cards"></div>
+  </section>
+
+  <section id="view-roadmap" hidden>
+    <div class="roadmap-intro">
+      <h2>Roadmap to the platinum</h2>
+      <p>One playthrough, roughly 200 hours, difficulty about 4 out of 10. There are no online
+      trophies, no difficulty settings and no mission replay. Free-roam continues after the story,
+      so almost everything can be cleaned up late — the single exception is flagged in stage 1.
+      Cheats disable trophies and saving, so keep them off a trophy run. Sources:
+      <a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/" target="_blank" rel="noopener">PowerPyx roadmap</a>,
+      <a href="https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series" target="_blank" rel="noopener">GTABase roadmap</a>,
+      <a href="https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap" target="_blank" rel="noopener">Push Square roadmap</a>.</p>
+    </div>
+    <div id="roadmap-stages"></div>
+    <h3>Every missable trophy, flagged</h3>
+    <div id="roadmap-missables"></div>
+  </section>
+</main>
+
+<footer>
+  <p>Trophy names, descriptions and grades are the official PlayStation list for Grand Theft Auto VI,
+  as published by Exophase and PSNProfiles. Every guide here is written for this page in our own words
+  and cites its sources beside it. An unofficial fan guide; not affiliated with Rockstar Games or Sony.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
